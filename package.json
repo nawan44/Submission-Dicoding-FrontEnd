@@ -1,0 +1,26 @@
+{
+  "name": "dicoding-frontend",
+  "version": "1.0.0",
+  "description": "<ul> <li>HTML</li> <li>CSS</li> <li>Asynchronous JavaScript Request</li> <li>Javascript ES6</li> <li>Web Components</li> <li>Node Package Manager</li> <li>Webpack</li>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nawan44/Submissio-Dicoding-FrontEnd.git"
+  },
+  "author": "nawan44",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nawan44/Submissio-Dicoding-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/nawan44/Submissio-Dicoding-FrontEnd#readme",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "moment": "^2.27.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
