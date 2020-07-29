@@ -1,6 +1,7 @@
 @import "appbar.css";
 @import "clublist.css";
 @import "searchbar.css";
+@import "appfooter.css";
 
 * {
     padding: 0;
@@ -16,4 +17,8 @@ main {
     width: 90%;
     max-width: 800px;
     margin: 32px auto;
+}
+#container{
+    min-height:100%;
+    position:relative;
 }
