@@ -17,11 +17,13 @@
   },
   "homepage": "https://github.com/nawan44/Submissio-Dicoding-FrontEnd#readme",
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "file-loader": "^6.0.0",
     "jquery": "^3.5.1",
     "moment": "^2.27.0"
   },
   "devDependencies": {
+    "css-loader": "^4.1.1",
     "http-server": "^0.12.3"
   }
 }

@@ -1,5 +1,4 @@
 @import "appbar.css";
-@import "clublist.css";
 @import "searchbar.css";
 @import "appfooter.css";
 
@@ -21,4 +20,7 @@ main {
 #container{
     min-height:100%;
     position:relative;
+}
+.navbar navbar-expand-lg navbar-light bg-light{
+    background-color: dodgerblue;
 }
