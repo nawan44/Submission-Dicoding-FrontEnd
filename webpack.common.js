@@ -1,20 +1,13 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
    entry: "./src/app.js",
    output: {
-    path: 'build/',
-    file: 'bundle.js',
-    publicPath: '/image'
+    path: path.resolve(__dirname, "src/"),
+    filename: 'bundle.js',
 },
-devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
-    publicPath: '/image/'
-},
+
    module: {
        rules: [
            {
@@ -28,13 +21,10 @@ devServer: {
                    }
                ]
            },
-           {
-             test: /\.jpg/,
-             loader: "file"
-           },
+           
            { 
             test: /\.(png|jpg)$/, 
-            loader: 'file-loader?name=/image/[name].[ext]' 
+            loader: 'file-loader?name=.src/image/[name].[ext]' 
        }
                ]
    },

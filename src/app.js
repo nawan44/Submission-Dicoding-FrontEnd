@@ -7,7 +7,7 @@ import "./script/component/app-footer.js";
 // import "./image/co.jpg";
 // import  "./image/handwash.jpg";
 
-import "regenerator-runtime";
+// import "regenerator-runtime";
 import "./styles/style.css";
 // import "./script/component/app-bar.js";
 import main from "./script/view/main.js";

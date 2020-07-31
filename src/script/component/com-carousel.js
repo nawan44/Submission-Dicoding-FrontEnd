@@ -12,16 +12,16 @@ class ComCarousel extends HTMLElement{
         <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-interval="10000">
-          <img  src={require('/image/handwash.jpg')}
+          <img  src={require('./image/handwash.jpg')}
 
             class="d-block w-100" alt="..." width="100%" height="500px">
           </div>
           <div class="carousel-item" data-interval="2000">
-          <img src={require('../../image/lockdown.jpg')} class="d-block w-100" alt="..." width="100%" height="500px">
+          <img src={require('./image/lockdown.jpg')} class="d-block w-100" alt="..." width="100%" height="500px">
 
           </div>
           <div class="carousel-item">
-          <img src={require('../../image/co.jpg')} class="d-block w-100" alt="..." width="100%" height="500px">
+          <img src={require('./image/co.jpg')} class="d-block w-100" alt="..." width="100%" height="500px">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
