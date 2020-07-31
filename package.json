@@ -4,7 +4,8 @@
   "description": "<ul> <li>HTML</li> <li>CSS</li> <li>Asynchronous JavaScript Request</li> <li>Javascript ES6</li> <li>Web Components</li> <li>Node Package Manager</li> <li>Webpack</li>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,21 @@
     "bootstrap": "^4.5.0",
     "file-loader": "^6.0.0",
     "jquery": "^3.5.1",
-    "moment": "^2.27.0"
+    "moment": "^2.27.0",
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
     "css-loader": "^4.1.1",
-    "http-server": "^0.12.3"
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "http-server": "^0.12.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^5.0.9"
   }
 }

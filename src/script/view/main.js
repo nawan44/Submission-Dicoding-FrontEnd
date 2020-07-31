@@ -37,7 +37,7 @@ const main = () => {
        clubListElement.innerHTML += `<h2 class="placeholder">${message}</h2>`;
    };
  
-   searchElement.clickEvent = onButtonSearchClicked;
+//    searchElement.clickEvent = onButtonSearchClicked;
 };
  
 export default main;
