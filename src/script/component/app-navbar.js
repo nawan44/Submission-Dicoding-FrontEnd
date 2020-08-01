@@ -1,12 +1,17 @@
+import About from './page/about-covid.js';
+import "@appnest/web-router";
+
 class AppNavbar extends HTMLElement{
     connectedCallback(){
         this.render();
 
         
     }
+
+
     render(){
-        this.innerHTML= `  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        this.innerHTML= `  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <a class="navbar-brand" href="./page/about-covid.js"}>Covid -19</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -16,17 +21,18 @@ class AppNavbar extends HTMLElement{
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">About Covid</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Prevention</a>
             </li>
           </ul>
           <span class="navbar-text">
-            Navbar text with an inline element
+          Countries
           </span>
         </div>
       </nav>`;
     }
 }
 customElements.define("app-navbar", AppNavbar);
+
