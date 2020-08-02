@@ -4,12 +4,12 @@ const path = require("path");
 module.exports = {
    entry: "./src/app.js",
    output: {
-    publicPath: '/',
-    path: path.resolve(__dirname, "./src/"),
+    publicPath: 'src/',
+    path: path.resolve(__dirname, "src/"),
     filename: 'main.js',
 },
 devServer: {
-    contentBase: "./src/",
+    contentBase: "src/",
     hot: true,
   } ,
    module: {
@@ -28,7 +28,7 @@ devServer: {
            
            { 
             test: /\.(png|jpg)$/, 
-            loader: 'file-loader?name=.src/script/component/image/[name].[ext]' 
+            loader: 'file-loader?name=./src/script/component/image/[name].[ext]' 
        }
                ]
    },

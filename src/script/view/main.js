@@ -1,7 +1,7 @@
 import "@appnest/web-router";
+
 // import AboutCovid from '../component/page/about-covid.js'
 
-// Define a web component
 class Main extends HTMLElement {
   constructor () {
     super();
@@ -16,7 +16,7 @@ customElements.define("main", Main);
 const routerSlot = document.querySelector("router-slot");
 routerSlot.add([
   {
-    path: "../component/page/about-covid",
+    path: "./component/page/about-covid",
     // Load a web component
     component: AboutCovid
   },
