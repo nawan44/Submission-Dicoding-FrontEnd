@@ -1,11 +1,16 @@
+
 class AboutCovid extends HTMLElement{
     connectedCallback(){
         this.render();
 
         
     }
+    
     render(){
-        this.innerHTML= ` <div class="jumbotron jumbotron-fluid">
+        
+        this.innerHTML= ` 
+        
+        <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Coronavirus</h1>
           <h3>Apa itu coronavirus?</h3>

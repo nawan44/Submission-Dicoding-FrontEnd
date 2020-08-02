@@ -8,7 +8,10 @@ module.exports = {
     path: path.resolve(__dirname, "./src/"),
     filename: 'main.js',
 },
-
+devServer: {
+    contentBase: "./src/",
+    hot: true,
+  } ,
    module: {
        rules: [
            {

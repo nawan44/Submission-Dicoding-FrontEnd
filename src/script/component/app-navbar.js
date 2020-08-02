@@ -1,5 +1,4 @@
 import About from './page/about-covid.js';
-import "@appnest/web-router";
 
 class AppNavbar extends HTMLElement{
     connectedCallback(){
@@ -10,8 +9,11 @@ class AppNavbar extends HTMLElement{
 
 
     render(){
-        this.innerHTML= `  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-        <a class="navbar-brand" href="./page/about-covid.js"}>Covid -19</a>
+
+        this.innerHTML=  `  
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <a class="navbar-brand" href="#">Covid -19</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,14 +23,14 @@ class AppNavbar extends HTMLElement{
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Covid</a>
+              <a class="nav-link" href="about-covid">About Covid</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Prevention</a>
+              <a class="nav-link" href="#">Countries</a>
             </li>
           </ul>
           <span class="navbar-text">
-          Countries
+          Contact
           </span>
         </div>
       </nav>`;

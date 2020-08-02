@@ -1,43 +1,45 @@
-import '../component/search-bar.js';
-import DataSource from '../data/data-source.js';
+import "@appnest/web-router";
+// import AboutCovid from '../component/page/about-covid.js'
 
-const main = () => {
-   const searchElement = document.querySelector("search-bar");
-   const clubListElement = document.querySelector("#clubList");
- 
-   const onButtonSearchClicked = async () => {
-       try {
-           const result = await DataSource.searchClub(searchElement.value);
-           renderResult(result);
-       } catch (message) {
-           fallbackResult(message)
-       }
-   };
- 
-   const renderResult = results => {
-       clubListElement.innerHTML = "";
-       results.forEach(club => {
-           const { name, fanArt, description } = club;
-           const clubElement = document.createElement("div");
-           clubElement.setAttribute("class", "club");
- 
-           clubElement.innerHTML = `
-               <img class="fan-art-club" src="${fanArt}" alt="Fan Art">
-               <div class="club-info">
-                   <h2>${name}</h2>
-                   <p>${description}</p>
-               </div>`;
- 
-           clubListElement.appendChild(clubElement);
-       })
-   };
- 
-   const fallbackResult = message => {
-       clubListElement.innerHTML = "";
-       clubListElement.innerHTML += `<h2 class="placeholder">${message}</h2>`;
-   };
- 
-//    searchElement.clickEvent = onButtonSearchClicked;
-};
- 
-export default main;
+// Define a web component
+class Main extends HTMLElement {
+  constructor () {
+    super();
+    const shadow = this.attachShadow({mode: "open"});
+    shadow.appendChild(document.createTextNode("🎁 This is a custom element!"));
+  }
+}
+
+customElements.define("main", Main);
+
+// Setup the router
+const routerSlot = document.querySelector("router-slot");
+routerSlot.add([
+  {
+    path: "../component/page/about-covid",
+    // Load a web component
+    component: AboutCovid
+  },
+//   {
+//     path: "home",
+//     component: () => {
+//       // Manually create the home Main 
+//       const $div = document.createElement("div");
+//       $div.innerText = `🏠 This is the home Main!`;
+//       return $div;
+//     }
+//   },
+  //   {
+  //   path: "about",
+  //   component: () => {
+  //     // Manually create the settings Main 
+  //     const $div = document.createElement("div");
+  //     $div.innerText = `⚙️ This is the settings Main!`;
+  //     return $div;
+  //   }
+  //  },
+  {
+    path: "**",
+    redirectTo: "home"
+  }
+]);
