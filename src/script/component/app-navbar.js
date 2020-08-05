@@ -11,7 +11,10 @@ class AppNavbar extends HTMLElement{
     render(){
 
         this.innerHTML=  `  
-        
+        <div id="router-container">
+  <router-slot></router-slot>
+</div>
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light" >
         <a class="navbar-brand" href="#">Covid -19</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

@@ -4,12 +4,12 @@ const path = require("path");
 module.exports = {
    entry: "./src/app.js",
    output: {
-    publicPath: 'src/',
-    path: path.resolve(__dirname, "src/"),
-    filename: 'main.js',
+    publicPath: '/',
+    path: path.resolve(__dirname, "src"),
+    filename: 'app.js',
 },
 devServer: {
-    contentBase: "src/",
+    contentBase: "src",
     hot: true,
   } ,
    module: {

@@ -9,6 +9,7 @@ class AboutCovid extends HTMLElement{
     render(){
         
         this.innerHTML= ` 
+
         
         <div class="jumbotron jumbotron-fluid">
         <div class="container">
