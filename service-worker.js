@@ -1,38 +1,21 @@
 const CACHE_NAME = 'firstpwa-v6';
+// const CACHE_NAME = 'firstpwa-v6';
+
+
 var urlsToCache = [
 	'/',
 	'/nav.html',
-	'/index.html',
-	'/pages/beranda.html',
-	'/pages/karya.html',
-	'/pages/kontak.html',
-	'/pages/game2D.html',
-	'/pages/game3D.html',
-	'/pages/gameAR.html',
-	'/css/materialize.min.css',
-	'/css/style.css',
-	'/js/materialize.min.js',
-	'/js/script.js',
-	'/foto/AR.png',
-	'/foto/cscu.png',
-	'/foto/dicoding.jpeg',
-	'/foto/github.png',
-	'/foto/imastudio.png',
-	'/foto/instagram.png',
-	'/foto/linkedin.png',
-	'/foto/microsoft.png',
-	'/foto/pong.png',
-	'/foto/profil.jpg',
-	'/foto/recycleview.png',
-	'/images/icons/icon-72x72.png',
-	'/images/icons/icon-96x96.png',
-	'/images/icons/icon-128x128.png',
-	'/images/icons/icon-144x144.png',
-	'/images/icons/icon-152x152.png',
-	'/images/icons/icon-192x192.png',
-	'/images/icons/icon-384x384.png',
-	'/images/icons/icon-512x512.png',
-	'/manifest.json'
+	'/manifest.json',
+	'app.js',
+	'/style/appbar.css',
+	'/style/appfooter.css',
+	'/style/searchbar.css',
+	'/style/style.css',
+	'script/view/main.js',
+	'script/data/club.js',
+	'script/data/data-source.js',
+	
+	
 
 ];
 
