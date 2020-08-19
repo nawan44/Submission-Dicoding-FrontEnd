@@ -5,13 +5,10 @@ module.exports = {
    entry: "./src/app.js",
    output: {
     publicPath: '/',
-    path: path.resolve(__dirname, "src"),
-    filename: 'app.js',
+    path: path.resolve(__dirname, "dist"),
+    filename: 'bundle.js',
 },
-devServer: {
-    contentBase: "src",
-    hot: true,
-  } ,
+
    module: {
        rules: [
            {
