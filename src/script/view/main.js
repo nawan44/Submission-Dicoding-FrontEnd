@@ -4,11 +4,10 @@
 import "../component/com-carousel.js";
 import "../component/app-navbar.js";
 import "../component/app-footer.js";
-import "../component/page/about-covid.js";
+import "../component/page/About.js";
 import "../component/page/home.js";
 import "../component/page/Error.js";
 import "../component/page/Contact.js";
-
 import "../component/page/Countries.js";
 
 
@@ -43,27 +42,6 @@ const router = [
 
 
 
-//   const searchElement = document.querySelector("search-bar");
-//   const clubListElement = document.querySelector("club-list");
-
-//   const onButtonSearchClicked = async () => {
-//       try{
-//           const result = await DataSource.searchClub(searchElement.value);
-//           renderResult(result);
-//       } catch (message) {
-//           fallbackResult(message)
-//       }
-//   };
-
-//   const renderResult =  results => {
-//       clubListElement.clubs = results;
-//   };
-
-//   const fallbackResult = message => {
-//       clubListElement.renderError(message);
-//   };
-
-//   searchElement.clickEvent = onButtonSearchClicked;
 };
 
 export default main;

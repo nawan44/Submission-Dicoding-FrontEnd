@@ -1,5 +1,5 @@
 
-class AboutCovid extends HTMLElement{
+class About extends HTMLElement{
     connectedCallback(){
         this.innerHTML = ` 
 
@@ -54,4 +54,4 @@ class AboutCovid extends HTMLElement{
     
 
 }
-customElements.define("about-covid", AboutCovid);
+customElements.define("about-covid", About);

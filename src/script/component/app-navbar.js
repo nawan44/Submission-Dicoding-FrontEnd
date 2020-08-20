@@ -23,9 +23,7 @@ class AppNavbar extends HTMLElement{
             <li class="nav-item">
               <a class="nav-link" href="#about-covid">About Covid</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#countries-page">Countries</a>
-            </li>
+
           </ul>
           <span >
           <a class="nav-link" href="#contact-page">Contact</a>
