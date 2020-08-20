@@ -1,5 +1,5 @@
-@import "appbar.css";
-@import "searchbar.css";
+/* @import "appbar.css";
+@import "searchbar.css"; */
 @import "appfooter.css";
 
 * {
@@ -16,7 +16,7 @@ main {
     width: 90%;
     max-width: 800px;
     margin: 32px auto;
- 
+    position: relative;
 }
 #container{
     min-height:100%;

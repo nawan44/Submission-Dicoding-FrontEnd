@@ -10,31 +10,31 @@ import main from "./script/view/main.js";
 
 
 
-// document.addEventListener("DOMContentLoaded", main);
+document.addEventListener("DOMContentLoaded", main);
 
 
-const router = [
-    { path: "", page: "home-page" },
-    { path: "about-covid", page: "about-covid" },
-    { path: "contact", page: "contact" }
-  ];
+// const router = [
+//     { path: "", page: "home-page" },
+//     { path: "about-covid", page: "about-covid" },
+//     { path: "contact", page: "contact" }
+//   ];
   
-  const setPage = () => {
-    const path = window.location.hash.substr(1);
-    const route = router.find((route) => route.path === path) || {
-      page: "error-page"
-    };
+//   const setPage = () => {
+//     const path = window.location.hash.substr(1);
+//     const route = router.find((route) => route.path === path) || {
+//       page: "error-page"
+//     };
   
-    document.querySelector("main").innerHTML = "";
-    document
-      .querySelector("main")
-      .appendChild(document.createElement(route.page));
-  };
+//     document.querySelector("main").innerHTML = "";
+//     document
+//       .querySelector("main")
+//       .appendChild(document.createElement(route.page));
+ 
   
-  // document.querySelectorAll('[href]').forEach(link => {
-  //   link.addEventListener('click', setPage())
-  // })
-  
-  window.addEventListener("popstate", setPage());
-  window.addEventListener("DOMContentLoaded", setPage());
+//   document.querySelectorAll("contact").forEach(link => {
+//     link.addEventListener("contact", setPage())
+//   })
+// };
+//   window.addEventListener("popstate", setPage());
+//   window.addEventListener("DOMContentLoaded", setPage());
   
