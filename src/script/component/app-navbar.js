@@ -1,4 +1,3 @@
-import './page/about-covid.js';
 
 class AppNavbar extends HTMLElement{
     connectedCallback(){
@@ -26,14 +25,15 @@ class AppNavbar extends HTMLElement{
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about-covid">About Covid</a>
+              <a class="nav-link" href="#about-covid">About Covid</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="countries">Countries</a>
+              <a class="nav-link" href="#">Countries</a>
             </li>
           </ul>
-          <span class="navbar-text" href="contact">
-          Contact
+          <span >
+          <a class="nav-link" href="#contact">Contact</a>
+          
           </span>
         </div>
       </nav>`;

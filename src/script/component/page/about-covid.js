@@ -1,14 +1,7 @@
 
 class AboutCovid extends HTMLElement{
     connectedCallback(){
-        this.render();
-
-        
-    }
-    
-    render(){
-        
-        this.innerHTML= ` 
+        this.innerHTML = ` 
 
         
         <div class="jumbotron jumbotron-fluid">
@@ -55,6 +48,10 @@ class AboutCovid extends HTMLElement{
            <p>Source : https://www.who.int/</p>
 </div>
       </div>`;
+
+        
     }
+    
+
 }
 customElements.define("about-covid", AboutCovid);

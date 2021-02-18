@@ -16,6 +16,7 @@ main {
     width: 90%;
     max-width: 800px;
     margin: 32px auto;
+ 
 }
 #container{
     min-height:100%;
