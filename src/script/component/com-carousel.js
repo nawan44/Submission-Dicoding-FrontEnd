@@ -1,7 +1,7 @@
 import Handwash from './image/handwash.jpg';
 import Co from './image/co.jpg';
 import Lockd from './image/lockdown.jpg'
-import "../../styles/carousel.css"
+
 
 class ComCarousel extends HTMLElement{
 
