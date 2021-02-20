@@ -1,15 +1,10 @@
+class AppNavbar extends HTMLElement {
+  connectedCallback() {
+    this.render();
+  }
 
-class AppNavbar extends HTMLElement{
-    connectedCallback(){
-        this.render();
-
-        
-    }
-
-
-    render(){
-
-        this.innerHTML=  `  
+  render() {
+    this.innerHTML = `  
         <nav class="navbar navbar-expand-lg navbar-light bg-light" >
         <a class="navbar-brand" href="#">Covid -19</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +26,6 @@ class AppNavbar extends HTMLElement{
           </span>
         </div>
       </nav>`;
-    }
+  }
 }
 customElements.define("app-navbar", AppNavbar);
-
