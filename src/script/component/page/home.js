@@ -1,6 +1,6 @@
 var xhr = new XMLHttpRequest();
-var url = "https://covid19.mathdro.id/api/confirmed";
-// var url = "https://data.covid19.go.id/public/api/prov.json";
+// var url = "https://covid19.mathdro.id/api/confirmed";
+var url = "http://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi";
 // var url = "https://indonesia-covid-19.mathdro.id/api/provinsi/";
 // var url = "https://api.covid19api.com/countries";
 
@@ -14,14 +14,17 @@ const dataJson =JSON.parse( this.responseText);
 
 var jjj = JSON.parse(dataJ)
 function zzz() {
+  
   for (i = 0; i < jjj.length; i++) { 
-      document.getElementById("user").innerHTML += 
-      jjj[i].countryRegion + '<br/>' 
 
-      document.getElementById("id").innerHTML += 
-      jjj[i].confirmed + '<br/>' 
-      document.getElementById("title").innerHTML += 
-      jjj[i].deaths + '<br/>'
+      document.getElementById("provinsi").innerHTML += 
+      jjj[i].provinsi + '<br/>' 
+      document.getElementById("kasus").innerHTML += 
+      jjj[i].kasus + '<br/> ' 
+      document.getElementById("sembuh").innerHTML += 
+      jjj[i].sembuh + '<br/> ' 
+      document.getElementById("meninggal").innerHTML += 
+      jjj[i].meninggal + '<br/> '
   }
 }
 zzz();
@@ -40,23 +43,29 @@ class HomePage extends HTMLElement {
 
   render() {
     this.innerHTML = `  
-
-<div class="nama">Name AKu</div>
+<h3 class="judul-table">
+JUMLAH KASUS COVID-19 di INDONESIA
+</h3>
 <table class="table">
   <tr>
-    <th class="table-th">Company</th>
-    <th  class="table-th">Contact</th>
-    <th  class="table-th">Country</th>
+    <th class="table-th">Nama Provinsi</th>
+    <th  class="table-th">Jumlah Kasus</th>
+    <th  class="table-th">Jumlah Sembuh</th>
+    <th  class="table-th">Jumlah Meninggal</th>
   </tr>
   
   <tr>
-    <td  class="table-td"  id="user">
+    <td  class="table-td"  id="provinsi">
     
     </td>
-    <td  class="table-td" id="id">
+    <td  class="table-td" id="kasus">
 
     </td>
-    <td  class="table-td" id="title">
+
+    <td  class="table-td" id="sembuh">
+
+    </td>
+    <td  class="table-td" id="meninggal">
 
     </td>
   </tr>
