@@ -1,9 +1,9 @@
-var xhr = new XMLHttpRequest();
-// var url = "https://covid19.mathdro.id/api/confirmed";
-var url = "http://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi";
-// var url = "https://indonesia-covid-19.mathdro.id/api/provinsi/";
-// var url = "https://api.covid19api.com/countries";
+//style
 
+
+//GET API
+var xhr = new XMLHttpRequest();
+var url = "http://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi";
 xhr.response = "json";
 xhr.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
@@ -43,30 +43,81 @@ class HomePage extends HTMLElement {
 
   render() {
     this.innerHTML = `  
-<h3 class="judul-table">
+
+<h3 class="judul-table" style="color:blue; font-weight: bold;">
 JUMLAH KASUS COVID-19 di INDONESIA
 </h3>
-<table class="table">
-  <tr>
-    <th class="table-th">Nama Provinsi</th>
-    <th  class="table-th">Jumlah Kasus</th>
-    <th  class="table-th">Jumlah Sembuh</th>
-    <th  class="table-th">Jumlah Meninggal</th>
+<table class="table" style="font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+margin-top:30px;">
+  <tr 
+  
+  >
+    <th class="table-th"
+    style=" 
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    ">Nama Provinsi</th>
+    <th class="table-th"
+    style=" 
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    ">Jumlah Kasus</th>
+    <th class="table-th"
+    style=" 
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    ">Jumlah Sembuh</th>
+    <th class="table-th"
+    style=" 
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    ">Jumlah Meninggal</th>
   </tr>
   
-  <tr>
-    <td  class="table-td"  id="provinsi">
-    
+  <tr
+  style=" 
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    "
+  >
+    <td id="provinsi"
+    style=" 
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    "
+    >
     </td>
-    <td  class="table-td" id="kasus">
-
+    <td id="kasus"
+    style=" 
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    "
+    >
     </td>
-
-    <td  class="table-td" id="sembuh">
-
+    <td id="sembuh"
+    style=" 
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    "
+    >
     </td>
-    <td  class="table-td" id="meninggal">
-
+    <td id="meninggal"
+    style=" 
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    "
+    >
     </td>
   </tr>
   </table>
