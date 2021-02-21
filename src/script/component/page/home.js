@@ -1,45 +1,33 @@
-// var url = "https://jsonplaceholder.typicode.com/todos/1";
-// var e = null;
-// function kamu(url, callback) {
-//   const xhr = new XMLHttpRequest();
-//   xhr.open("GET", url, true);
-//   xhr.responseType = "json";
-//   xhr.onload = function (e) {
-//     if (this.status == 200) {
-//       data = xhr.response;
-//       // var data = JSON.parse(xhr.response);
-//       console.log("response>>>>>>>>>", data);
-//       // return data;
-
-//       // console.log(data["target"]["response"]);
-//       // message = e["target"]["response"];
-//       // return document.getElementById("satu");
-//     } else {
-//       console.error("Error!");
-//     }
-//   };
-//   console.log(xhr);
-//   xhr.send();
-// }
-
-// function loadContent() {
 var xhr = new XMLHttpRequest();
-var url = "https://api.github.com/users/petanikode";
+var url = "https://covid19.mathdro.id/api/confirmed";
+// var url = "https://data.covid19.go.id/public/api/prov.json";
+// var url = "https://indonesia-covid-19.mathdro.id/api/provinsi/";
+// var url = "https://api.covid19api.com/countries";
+
 xhr.response = "json";
 xhr.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
-    const data = JSON.parse(xhr.responseText);
-    console.log("ressss", data.id);
-    const login = "Nama Login :";
+const dataJson =JSON.parse( this.responseText);
+  const dataJ =this.responseText
+  console.log(dataJ)
 
-    // data.map((row) => {
-    //   {
-    //     row.login;
-    //   }
-    // });
 
-    // return data;
-    document.getElementById("hasil").innerHTML = data.id;
+var jjj = JSON.parse(dataJ)
+function zzz() {
+  for (i = 0; i < jjj.length; i++) { 
+      document.getElementById("user").innerHTML += 
+      jjj[i].countryRegion + '<br/>' 
+
+      document.getElementById("id").innerHTML += 
+      jjj[i].confirmed + '<br/>' 
+      document.getElementById("title").innerHTML += 
+      jjj[i].deaths + '<br/>'
+  }
+}
+zzz();
+
+
+
   }
 };
 xhr.open("GET", url, true);
@@ -52,8 +40,27 @@ class HomePage extends HTMLElement {
 
   render() {
     this.innerHTML = `  
-Name AKu
-<div id="hasil"></div>
+
+<div class="nama">Name AKu</div>
+<table class="table">
+  <tr>
+    <th class="table-th">Company</th>
+    <th  class="table-th">Contact</th>
+    <th  class="table-th">Country</th>
+  </tr>
+  
+  <tr>
+    <td  class="table-td"  id="user">
+    
+    </td>
+    <td  class="table-td" id="id">
+
+    </td>
+    <td  class="table-td" id="title">
+
+    </td>
+  </tr>
+  </table>
     `;
   }
 }
