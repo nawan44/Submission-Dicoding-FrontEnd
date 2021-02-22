@@ -1,3 +1,5 @@
+import babelParser from "@babel/parser";
+
 import "./script/component/com-carousel.js";
 import "./script/component/app-navbar.js";
 import "./script/component/app-footer.js";
