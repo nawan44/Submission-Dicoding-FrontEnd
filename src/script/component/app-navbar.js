@@ -1,13 +1,18 @@
+$('.nav-link').click(function klik() {
+  location.reload();
+  return false;
+
+});
+
 class AppNavbar extends HTMLElement {
   connectedCallback() {
     this.render(
-      function myFancyOnClickHandler() {
-        document.getElementsByClassName("about-covid");
-      }
+
       
     );
   }
-
+  
+  
   render() {
     this.innerHTML = `  
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#E8ECEF;" >
@@ -18,15 +23,15 @@ class AppNavbar extends HTMLElement {
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a  onclick="klik()" class="nav-link" href="#" >Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="myFancyOnClickHandler()" href="#about-covid">About Covid</a>
+              <a onclick="klik()" id="nav" class="nav-link" href="#about-covid">About Covid</a>
             </li>
 
           </ul>
           <span >
-          <a class="nav-link" href="#contact-page">Contact</a>
+          <a  onclick="klik()" class="nav-link" id="contact-page"  href="#contact-page">Contact</a>
           
           </span>
         </div>

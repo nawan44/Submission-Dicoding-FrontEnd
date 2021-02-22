@@ -1,16 +1,13 @@
 {
-  "name": "VanillaJs",
+  "name": "vanillajs",
   "version": "1.0.0",
   "description": "<ul> <li>HTML</li> <li>CSS</li> <li>Asynchronous JavaScript Request</li> <li>Javascript ES6</li> <li>Web Components</li> <li>Node Package Manager</li> <li>Webpack</li>",
   "main": "index.js",
   "scripts": {
     "heroku-prebuild": "npm install --dev",
     "heroku-postbuild": "webpack --config webpack.prod.js",
-
     "build": "webpack --mode production",
-    "start": "node src/index.js",
-
-
+    "start": "node src/index.js"
   },
   "author": "nawan44",
   "license": "ISC",

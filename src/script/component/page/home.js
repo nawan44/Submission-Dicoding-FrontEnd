@@ -11,7 +11,7 @@ const dataJson =JSON.parse( this.responseText);
   const dataJ =this.responseText
   // console.log(dataJ)
 
-function zzz() {
+ function zzz() {
   var k = '<tbody>';
 
     for(i = 0;i < dataJson.length; i++){
@@ -36,6 +36,11 @@ function zzz() {
     k+='</tbody>';
     document.getElementById('tableData').innerHTML = k;
 
+    // if(document){
+    //   document.getElementById('tableData').innerHTML = k;
+    // } else {
+    //   console.log("Cannot do element.innerHTML. The current value of element is ",element,". Index is currently ",index)
+    // }
 }
 zzz();
 
@@ -45,7 +50,7 @@ zzz();
 };
 xhr.open("GET", url, true);
 xhr.send();
-//}
+
 class HomePage extends HTMLElement {
   connectedCallback() {
     this.render();
