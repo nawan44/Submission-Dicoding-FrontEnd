@@ -1,5 +1,14 @@
-//style
 
+function harijamini() {
+  var d = new Date(),
+      minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+      hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+      ampm = d.getHours() >= 12 ? 'pm' : 'am',
+      months = ['Januari','Febuari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'],
+      days = ['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
+  return days[d.getDay()]+' ,  '+d.getDate()+' '+months[d.getMonth()]+' '+d.getFullYear()+'  Jam : '+hours+':'+minutes+ampm;
+  
+}
 
 //GET API
 var xhr = new XMLHttpRequest();
@@ -29,22 +38,15 @@ const dataJson =JSON.parse( this.responseText);
         + dataJson[i].sembuh.toLocaleString('id') + '</td>';
         k+= '<td style=" border: 1px solid #dddddd; text-align: right;padding: 8px;">' 
         + dataJson[i].meninggal.toLocaleString('id') + '</td>';
-
         k+= '</tr>';
       }
   }
     k+='</tbody>';
     document.getElementById('tableData').innerHTML = k;
+    document.getElementById("hariini").innerHTML = harijamini();
 
-    // if(document){
-    //   document.getElementById('tableData').innerHTML = k;
-    // } else {
-    //   console.log("Cannot do element.innerHTML. The current value of element is ",element,". Index is currently ",index)
-    // }
 }
 zzz();
-
-
 
   }
 };
@@ -60,8 +62,9 @@ class HomePage extends HTMLElement {
     this.innerHTML = `  
 
 <h3 class="judul-table" style="color:blue; font-weight: bold;">
-JUMLAH KASUS COVID-19 di INDONESIA
-</h3>
+JUMLAH KASUS COVID-19 di INDONESIA</h3>
+<div style="color:red; margin: 20px; font-weight: bold;">Data hari ini : <span id="hariini"></span></div>
+
 <table id="mytable" style="font-family: arial, sans-serif;
 border-collapse: collapse;
 width: 100%;
