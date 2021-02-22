@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "<ul> <li>HTML</li> <li>CSS</li> <li>Asynchronous JavaScript Request</li> <li>Javascript ES6</li> <li>Web Components</li> <li>Node Package Manager</li> <li>Webpack</li>",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "heroku-prebuild": "npm install --dev",
     "heroku-postbuild": "webpack --config webpack.prod.js",
@@ -11,7 +12,6 @@
   },
   "author": "nawan44",
   "license": "ISC",
-  "type": "module",
   "engines": {
     "node": "15.9.0"
   },
