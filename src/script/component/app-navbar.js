@@ -1,6 +1,6 @@
-$('.nav-link').click(function klik() {
-  location.reload();
-  return false;
+$('#about-covid').click(function(event) {
+
+  window.location.reload = '.page/About.js';
 
 });
 
@@ -23,15 +23,15 @@ class AppNavbar extends HTMLElement {
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a  onclick="klik()" class="nav-link" href="#" >Home <span class="sr-only">(current)</span></a>
+              <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#" >Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a onclick="klik()" id="nav" class="nav-link" href="#about-covid">About Covid</a>
+              <a  onclick="setTimeout(location.reload.bind(location), 1)" id="nav" class="nav-link" href="#about-covid">About Covid</a>
             </li>
 
           </ul>
           <span >
-          <a  onclick="klik()" class="nav-link" id="contact-page"  href="#contact-page">Contact</a>
+          <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" id="contact-page"  href="#contact-page">Contact</a>
           
           </span>
         </div>
