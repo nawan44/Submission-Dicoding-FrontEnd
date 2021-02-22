@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "heroku-prebuild": "npm install --dev",
-    "build": "webpack --mode production",
-    "start": "node src/app.js",
-    "heroku-prebuild": "npm install --dev",
+    "heroku-postbuild": "webpack --config webpack.prod.js",
 
+    "build": "webpack --mode production",
+    "start": "node src/index.js",
+s
 
   },
   "author": "nawan44",
