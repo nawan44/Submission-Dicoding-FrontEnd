@@ -4,9 +4,9 @@
   "description": "<ul> <li>HTML</li> <li>CSS</li> <li>Asynchronous JavaScript Request</li> <li>Javascript ES6</li> <li>Web Components</li> <li>Node Package Manager</li> <li>Webpack</li>",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "node node_modules/webpack/bin/webpack.js --display-error-details",
-    "postinstall": "npm run build",
+    "heroku-prebuild": "npm install --dev",
+    "build": "webpack --mode production",
+    "start": "node src/app.js",
 
 
   },
