@@ -1,6 +1,6 @@
 /* @import "appbar.css";
 @import "searchbar.css"; */
-@import "appfooter.css";
+@import "./appfooter.css";
 
 * {
     padding: 0;
