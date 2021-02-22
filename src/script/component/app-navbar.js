@@ -1,10 +1,9 @@
 class AppNavbar extends HTMLElement {
   connectedCallback() {
     this.render(
-
       function myFancyOnClickHandler() {
-        document.getElementBySelector('about-covid').innerHTML = 'about-covid'
-   }
+        document.getElementsByClassName("about-covid");
+      }
       
     );
   }
