@@ -14,18 +14,23 @@ const dataJson =JSON.parse( this.responseText);
 
 var jjj = JSON.parse(dataJ)
 function zzz() {
-  
-  for (i = 0; i < jjj.length; i++) { 
+  var k = '<tbody>'
+    for(i = 0;i < dataJson.length; i++){
+        k+= '<tr>';
+        k+= '<td style=" border: 1px solid #dddddd; text-align: left;padding: 8px;">' 
+      + dataJson[i].provinsi + '</td>';
+      k+= '<td style=" border: 1px solid #dddddd; text-align: center;padding: 8px;">' 
+      + dataJson[i].kasus + '</td>';
+      k+= '<td style=" border: 1px solid #dddddd; text-align: center;padding: 8px;">' 
+        + dataJson[i].sembuh + '</td>';
+        k+= '<td style=" border: 1px solid #dddddd; text-align: center;padding: 8px;">' 
+        + dataJson[i].meninggal + '</td>';
 
-      document.getElementById("provinsi").innerHTML += 
-      jjj[i].provinsi + '<br/>' 
-      document.getElementById("kasus").innerHTML += 
-      jjj[i].kasus + '<br/> ' 
-      document.getElementById("sembuh").innerHTML += 
-      jjj[i].sembuh + '<br/> ' 
-      document.getElementById("meninggal").innerHTML += 
-      jjj[i].meninggal + '<br/> '
-  }
+        k+= '</tr>';
+    }
+    k+='</tbody>';
+    document.getElementById('tableData').innerHTML = k;
+
 }
 zzz();
 
@@ -47,11 +52,11 @@ class HomePage extends HTMLElement {
 <h3 class="judul-table" style="color:blue; font-weight: bold;">
 JUMLAH KASUS COVID-19 di INDONESIA
 </h3>
-<table class="table" style="font-family: arial, sans-serif;
+<table id="mytable" style="font-family: arial, sans-serif;
 border-collapse: collapse;
 width: 100%;
 margin-top:30px;">
-  <tr 
+  <thead 
   
   >
     <th class="table-th"
@@ -78,48 +83,9 @@ margin-top:30px;">
     text-align: center;
     padding: 8px;
     ">Jumlah Meninggal</th>
-  </tr>
+  </thead>
   
-  <tr
-  style=" 
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-    "
-  >
-    <td id="provinsi"
-    style=" 
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    "
-    >
-    </td>
-    <td id="kasus"
-    style=" 
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-    "
-    >
-    </td>
-    <td id="sembuh"
-    style=" 
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-    "
-    >
-    </td>
-    <td id="meninggal"
-    style=" 
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-    "
-    >
-    </td>
-  </tr>
+  <tbody id="tableData"></tbody>
   </table>
     `;
   }
