@@ -11,9 +11,7 @@
   },
   "author": "nawan44",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nawan44/Submissio-Dicoding-FrontEnd/issues"
-  },
+  "type": "module",
   "engines": {
     "node": "15.9.0"
   },
