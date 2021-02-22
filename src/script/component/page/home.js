@@ -9,25 +9,30 @@ xhr.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
 const dataJson =JSON.parse( this.responseText);
   const dataJ =this.responseText
-  console.log(dataJ)
+  // console.log(dataJ)
 
-
-var jjj = JSON.parse(dataJ)
 function zzz() {
-  var k = '<tbody>'
+  var k = '<tbody>';
+
     for(i = 0;i < dataJson.length; i++){
+      for(j = 1; j < dataJson.length; i++){
+// console.log(j)
         k+= '<tr>';
+        k+= '<td style=" border: 1px solid #dddddd; text-align: center;padding: 8px;">' 
+        + j++
+        + '</td>';
         k+= '<td style=" border: 1px solid #dddddd; text-align: left;padding: 8px;">' 
       + dataJson[i].provinsi + '</td>';
-      k+= '<td style=" border: 1px solid #dddddd; text-align: center;padding: 8px;">' 
-      + dataJson[i].kasus + '</td>';
-      k+= '<td style=" border: 1px solid #dddddd; text-align: center;padding: 8px;">' 
-        + dataJson[i].sembuh + '</td>';
-        k+= '<td style=" border: 1px solid #dddddd; text-align: center;padding: 8px;">' 
-        + dataJson[i].meninggal + '</td>';
+      k+= '<td style=" border: 1px solid #dddddd; text-align: right;padding: 8px;">' 
+      + dataJson[i].kasus.toLocaleString('id') + '</td>';
+      k+= '<td style=" border: 1px solid #dddddd; text-align: right;padding: 8px;">' 
+        + dataJson[i].sembuh.toLocaleString('id') + '</td>';
+        k+= '<td style=" border: 1px solid #dddddd; text-align: right;padding: 8px;">' 
+        + dataJson[i].meninggal.toLocaleString('id') + '</td>';
 
         k+= '</tr>';
-    }
+      }
+  }
     k+='</tbody>';
     document.getElementById('tableData').innerHTML = k;
 
@@ -59,6 +64,12 @@ margin-top:30px;">
   <thead 
   
   >
+  <th class="table-th"
+  style=" 
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  ">No</th>
     <th class="table-th"
     style=" 
     border: 1px solid #dddddd;
