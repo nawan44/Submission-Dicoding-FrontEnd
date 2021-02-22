@@ -9,7 +9,7 @@
 
     "build": "webpack --mode production",
     "start": "node src/index.js",
-s
+
 
   },
   "author": "nawan44",
