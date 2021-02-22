@@ -1,6 +1,12 @@
 class AppNavbar extends HTMLElement {
   connectedCallback() {
-    this.render();
+    this.render(
+
+      function myFancyOnClickHandler() {
+        document.getElementBySelector('about-covid').innerHTML = 'about-covid'
+   }
+      
+    );
   }
 
   render() {
@@ -16,7 +22,7 @@ class AppNavbar extends HTMLElement {
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about-covid">About Covid</a>
+              <a class="nav-link" onclick="myFancyOnClickHandler()" href="#about-covid">About Covid</a>
             </li>
 
           </ul>
