@@ -1,9 +1,7 @@
 
 class About extends HTMLElement{
     connectedCallback(){
-        this.innerHTML = ` 
-
-        
+        this.innerHTML = `
         <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Coronavirus</h1>
