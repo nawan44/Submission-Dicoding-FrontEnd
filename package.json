@@ -6,8 +6,9 @@
   "scripts": {
     "heroku-prebuild": "npm install --dev",
     "heroku-postbuild": "webpack --config webpack.prod.js",
-    "dev": "nodemon index.js",
-    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index",
+    "start": "node index",
     "build": "webpack --config webpack.prod.js"
   },
   "author": "nawan44",
