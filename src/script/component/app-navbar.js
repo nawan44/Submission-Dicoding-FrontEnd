@@ -1,18 +1,12 @@
-$('#about-covid').click(function(event) {
-
-  window.location.reload = '.page/About.js';
-
+$("#about-covid").click(function (event) {
+  window.location.reload = ".page/About.js";
 });
 
 class AppNavbar extends HTMLElement {
   connectedCallback() {
-    this.render(
-
-      
-    );
+    this.render();
   }
-  
-  
+
   render() {
     this.innerHTML = `  
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#E8ECEF;" >
@@ -28,6 +22,9 @@ class AppNavbar extends HTMLElement {
             <li class="nav-item">
               <a  onclick="setTimeout(location.reload.bind(location), 1)" id="nav" class="nav-link" href="#about-covid">About Covid</a>
             </li>
+            <li class="nav-item">
+            <a  onclick="setTimeout(location.reload.bind(location), 1)" id="nav" class="nav-link" href="#gejala-covid">Gejala Covid</a>
+          </li>
 
           </ul>
           <span >
