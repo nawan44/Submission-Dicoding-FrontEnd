@@ -7,8 +7,8 @@
     "heroku-prebuild": "npm install --dev",
     "heroku-postbuild": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index",
-    "start": "node index",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "build": "webpack --config webpack.prod.js"
   },
   "author": "nawan44",
