@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/nawan44/Submissio-Dicoding-FrontEnd#readme",
   "dependencies": {
+    "@babel/core": "^7.12.17",
+
     "@appnest/web-router": "^1.4.2",
     "autoprefixer": "^9.8.0",
     "babel-preset-env": "^1.7.0",
