@@ -28,7 +28,7 @@ var url = "https://api.github.com/users/petanikode";
 xhr.response = "json";
 xhr.onreadystatechange = function () {
   if (this.readyState == 4 && this.status == 200) {
-    const data = JSON.parse(xhr.responseText);
+    const data = JSON.parse(this.responseText);
     console.log("ressss", data);
     const login = "Nama Login :";
 
@@ -39,7 +39,7 @@ xhr.onreadystatechange = function () {
     // });
 
     // return data;
-    document.getElementById("hasil").innerHTML = this.responseText;
+    document.getElementById("hasil").innerHTML = data.id;
   }
 };
 xhr.open("GET", url, true);
