@@ -6,15 +6,15 @@
   "scripts": {
     "heroku-prebuild": "npm install --dev",
     "heroku-postbuild": "webpack --config webpack.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
-    "start": "node index.js",
+    "start": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
   "author": "nawan44",
   "license": "ISC",
   "engines": {
-    "node": "15.9.0"
+    "node": "15.9.0",
+    "npm" : "7.5.4"
   },
   "homepage": "https://github.com/nawan44/Submissio-Dicoding-FrontEnd#readme",
   "dependencies": {
