@@ -1,7 +1,7 @@
 import "../component/com-carousel.js";
 import "../component/app-navbar.js";
 import "../component/app-footer.js";
-import "../component/page/About.js";
+import "../component/page/Tentang.js";
 import "../component/page/Gejala.js";
 import "../component/page/Penularan.js";
 import "../component/page/home.js";
@@ -12,7 +12,7 @@ import "../component/page/Countries.js";
 const main = () => {
   const router = [
     { path: "", page: "home-page" },
-    { path: "about-covid", page: "about-covid" },
+    { path: "tentang-covid", page: "tentang-covid" },
     { path: "gejala-covid", page: "gejala-covid" },
     { path: "countries-page", page: "countries-page" },
     { path: "contact-page", page: "contact-page" },

@@ -16,7 +16,7 @@ class AppNavbar extends HTMLElement {
               <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#" >Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#about-covid">About Covid</a>
+              <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#tentang-covid">Apa itu Covid-19 ?</a>
             </li>
             <li class="nav-item">
             <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#gejala-covid">Gejala Covid</a>
