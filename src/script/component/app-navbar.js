@@ -1,7 +1,3 @@
-$("#about-covid").click(function (event) {
-  window.location.reload = ".page/About.js";
-});
-
 class AppNavbar extends HTMLElement {
   connectedCallback() {
     this.render();
@@ -20,15 +16,17 @@ class AppNavbar extends HTMLElement {
               <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#" >Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a  onclick="setTimeout(location.reload.bind(location), 1)" id="nav" class="nav-link" href="#about-covid">About Covid</a>
+              <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#about-covid">About Covid</a>
             </li>
             <li class="nav-item">
-            <a  onclick="setTimeout(location.reload.bind(location), 1)" id="nav" class="nav-link" href="#gejala-covid">Gejala Covid</a>
+            <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#gejala-covid">Gejala Covid</a>
           </li>
-
+          <li class="nav-item">
+          <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#penularan-covid">Penularan Covid</a>
+        </li>
           </ul>
           <span >
-          <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" id="contact-page"  href="#contact-page">Contact</a>
+          <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#contact-page">Contact</a>
           
           </span>
         </div>

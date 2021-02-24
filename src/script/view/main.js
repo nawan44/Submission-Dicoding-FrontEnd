@@ -3,6 +3,7 @@ import "../component/app-navbar.js";
 import "../component/app-footer.js";
 import "../component/page/About.js";
 import "../component/page/Gejala.js";
+import "../component/page/Penularan.js";
 import "../component/page/home.js";
 import "../component/page/Error.js";
 import "../component/page/Contact.js";
@@ -15,6 +16,9 @@ const main = () => {
     { path: "gejala-covid", page: "gejala-covid" },
     { path: "countries-page", page: "countries-page" },
     { path: "contact-page", page: "contact-page" },
+    { path: "penularan-covid", page: "penularan-covid" },
+
+    
   ];
 
   const setPage = () => {
