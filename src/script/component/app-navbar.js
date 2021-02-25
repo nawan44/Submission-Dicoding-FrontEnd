@@ -24,6 +24,9 @@ class AppNavbar extends HTMLElement {
           <li class="nav-item">
           <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#penularan-covid">Penularan Covid</a>
         </li>
+        <li class="nav-item">
+        <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#vaksin-covid">Vaksin Covid</a>
+      </li>
           </ul>
           <span >
           <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#contact-page">Contact</a>

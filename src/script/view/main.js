@@ -8,6 +8,7 @@ import "../component/page/home.js";
 import "../component/page/Error.js";
 import "../component/page/Contact.js";
 import "../component/page/Countries.js";
+import "../component/page/Vaksin.js";
 
 const main = () => {
   const router = [
@@ -17,6 +18,7 @@ const main = () => {
     { path: "countries-page", page: "countries-page" },
     { path: "contact-page", page: "contact-page" },
     { path: "penularan-covid", page: "penularan-covid" },
+    { path: "vaksin-covid", page: "vaksin-covid" },
 
     
   ];
