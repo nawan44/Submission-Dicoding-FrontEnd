@@ -1,3 +1,4 @@
+
 class AppNavbar extends HTMLElement {
   connectedCallback() {
     this.render();
