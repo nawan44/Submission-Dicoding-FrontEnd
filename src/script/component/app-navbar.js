@@ -1,10 +1,28 @@
+// import navbar from "../../styles/appnavbar.css";
+import  "../../styles/appnavbar.css";
 
 class AppNavbar extends HTMLElement {
+  // constructor() {
+  //   super();
+  //   // shadow dom
+  //   const shadowDOM = this.attachShadow({ mode: 'open' });
+
+  //   // Render the template
+  //   shadowDOM.appendChild(template.content.cloneNode(true));
+
+  //   var elems = shadowDOM.querySelectorAll('nav-link');
+  //   var instances = M.FormSelect.init(elems, []); //example of select init
+  // }
+
   connectedCallback() {
-    this.render();
+    this.render(
+
+    );
   }
+  ;
 
   render() {
+
     this.innerHTML = `  
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#E8ECEF;" >
         <a class="navbar-brand"  onclick="setTimeout(location.reload.bind(location), 1)" href="#" style="color:blue; font-weight:bold; font-size:25px">Covid -19</a>

@@ -1,3 +1,13 @@
 .container{
-    color:aliceblue
+    text-align: justify;
+}
+.title{
+    margin: 20px 0 30px 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+.desc{
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5rem;
 }
