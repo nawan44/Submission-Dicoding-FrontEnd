@@ -24,15 +24,15 @@ class AppNavbar extends HTMLElement {
   render() {
 
     this.innerHTML = `  
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#E8ECEF;" >
-        <a class="navbar-brand"  onclick="setTimeout(location.reload.bind(location), 1)" href="#" style="color:blue; font-weight:bold; font-size:25px">Covid -19</a>
+        <nav class="navbar navbar-expand-lg navbar-light "  >
+        <a class="navbar-brand"  onclick="setTimeout(location.reload.bind(location), 1)" href="#" >Covid -19</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#" >Home <span class="sr-only">(current)</span></a>
+              <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#" >Home</a>
             </li>
             <li class="nav-item">
               <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#tentang-covid">Apa itu Covid-19 ?</a>
@@ -48,7 +48,7 @@ class AppNavbar extends HTMLElement {
       </li>
           </ul>
           <span >
-          <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-link" href="#contact-page">Contact</a>
+          <a  onclick="setTimeout(location.reload.bind(location), 1)" class="nav-contact" href="#contact-page">Contact</a>
           
           </span>
         </div>

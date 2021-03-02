@@ -1,6 +1,30 @@
-app-navbar{
-    background-color: chartreuse;
+nav {
+  background-color: chartreuse;
 }
-.nav-link{
-    color: blue;
+.nav-link {
+  color: red !important;
+  font-weight: 600;
+}
+.nav-link:hover {
+    color: #000 !important;
+    font-weight: 600;
+    background-color: bisque;
+  }
+
+.nav-contact {
+    color: blue c;
+    font-weight: 600;
+    font-size: 20px;
+
+  }
+  .nav-contact:hover {
+    color: blueviolet !important;
+    font-weight: 600;
+    font-size: 20px;
+
+  }
+.navbar-brand {
+  color: blue !important;
+  font-weight: bold;
+  font-size: 25px;
 }
