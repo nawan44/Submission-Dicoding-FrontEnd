@@ -11,3 +11,10 @@
     color: #000;
     line-height: 1.5rem;
 }
+#more {display: none;}
+#myBtn:hover{
+    width:150px;
+    text-decoration: underline;
+    color:blue;
+background-color:chartreuse
+}
