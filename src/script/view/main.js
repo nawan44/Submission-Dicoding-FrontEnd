@@ -7,7 +7,6 @@ import "../component/page/Penularan.js";
 import "../component/page/home.js";
 import "../component/page/Error.js";
 import "../component/page/Contact.js";
-import "../component/page/Countries.js";
 import "../component/page/Vaksin.js";
 
 const main = () => {
